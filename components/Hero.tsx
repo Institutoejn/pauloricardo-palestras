@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { ArrowRight, Star, Users, CheckCircle, Award } from 'lucide-react';
+import { ArrowRight, Star, Users, Award, Globe } from 'lucide-react';
 
 const Hero: React.FC = () => {
   return (
@@ -56,27 +56,27 @@ const Hero: React.FC = () => {
             </a>
           </div>
 
-          {/* Prova Social Centralizada */}
+          {/* Prova Social Atualizada */}
           <div className="flex flex-wrap items-center justify-center gap-8 md:gap-12 pt-16 md:pt-20 opacity-80">
             <div className="text-center group">
               <div className="text-2xl sm:text-3xl font-extrabold text-white flex items-center justify-center gap-2 group-hover:text-[#00d1ff] transition-colors">
-                <Users size={24} className="text-[#00d1ff]" /> +500
+                <Globe size={24} className="text-[#00d1ff]" /> +2.000
               </div>
-              <div className="text-[10px] sm:text-xs text-gray-500 uppercase font-bold tracking-widest mt-1">Jovens Formados</div>
+              <div className="text-[10px] sm:text-xs text-gray-500 uppercase font-bold tracking-widest mt-1">Pessoas Impactadas</div>
             </div>
             <div className="hidden sm:block w-px h-12 bg-blue-900/50"></div>
             <div className="text-center group">
               <div className="text-2xl sm:text-3xl font-extrabold text-white flex items-center justify-center gap-2 group-hover:text-[#00d1ff] transition-colors">
-                <CheckCircle size={24} className="text-[#00d1ff]" /> 80%
+                <Users size={24} className="text-[#00d1ff]" /> +500
               </div>
-              <div className="text-[10px] sm:text-xs text-gray-500 uppercase font-bold tracking-widest mt-1">Empregabilidade</div>
+              <div className="text-[10px] sm:text-xs text-gray-500 uppercase font-bold tracking-widest mt-1">Jovens Formados (EJN)</div>
             </div>
             <div className="hidden sm:block w-px h-12 bg-blue-900/50"></div>
             <div className="text-center group">
               <div className="text-2xl sm:text-3xl font-extrabold text-white flex items-center justify-center gap-2 group-hover:text-[#00d1ff] transition-colors">
                 <Award size={24} className="text-[#00d1ff]" /> +400
               </div>
-              <div className="text-[10px] sm:text-xs text-gray-500 uppercase font-bold tracking-widest mt-1">Líderes Treinados</div>
+              <div className="text-[10px] sm:text-xs text-gray-500 uppercase font-bold tracking-widest mt-1">Líderes Impactados</div>
             </div>
           </div>
         </div>
