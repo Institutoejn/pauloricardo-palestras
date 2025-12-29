@@ -4,9 +4,9 @@ import { Users, Zap, TrendingUp, ChevronRight, CheckCircle2, AlertCircle, Target
 import { LECTURES } from '../constants';
 
 const IconMap: Record<string, React.ReactNode> = {
-  Users: <Users size={28} />,
-  Zap: <Zap size={28} />,
-  TrendingUp: <TrendingUp size={28} />,
+  Users: <Users size={32} />,
+  Zap: <Zap size={32} />,
+  TrendingUp: <TrendingUp size={32} />,
 };
 
 const Lectures: React.FC = () => {
@@ -26,16 +26,8 @@ const Lectures: React.FC = () => {
               key={lecture.id} 
               className="group glass-effect p-6 sm:p-8 rounded-3xl transition-all duration-500 hover:-translate-y-2 border-blue-900/30 hover:border-[#00d1ff]/40 flex flex-col h-full"
             >
-              <div className="relative w-full h-48 mb-6 rounded-2xl overflow-hidden border border-blue-900/30">
-                <img 
-                  src={`https://placehold.co/600x400/050a18/00d1ff?text=${lecture.title.replace(/ /g, '+')}`} 
-                  alt={lecture.title} 
-                  className="w-full h-full object-cover transition-all duration-500 group-hover:scale-105"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#050a18] to-transparent opacity-60"></div>
-                <div className="absolute bottom-4 left-4 w-10 h-10 bg-[#00d1ff] rounded-xl flex items-center justify-center text-[#050a18]">
+              <div className="w-14 h-14 mb-6 bg-[#00d1ff]/10 rounded-2xl flex items-center justify-center text-[#00d1ff] border border-[#00d1ff]/20 shadow-[0_0_15px_rgba(0,209,255,0.1)] group-hover:scale-110 transition-transform duration-500">
                   {IconMap[lecture.iconName]}
-                </div>
               </div>
 
               <h4 className="text-xl sm:text-2xl font-bold text-white mb-3 leading-snug group-hover:text-[#00d1ff] transition-colors">
