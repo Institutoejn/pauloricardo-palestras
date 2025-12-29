@@ -12,8 +12,8 @@ const About: React.FC = () => {
             <div className="relative z-10">
               <div className="aspect-[4/5] rounded-2xl overflow-hidden shadow-2xl shadow-cyan-500/20 border border-white/10">
                 <img 
-                  src="https://drive.google.com/uc?export=view&id=1HSJUEnDSz_DVmckY1e722xEuGRI4gFc3" 
-                  alt="Paulo Ricardo Palestrante Instituto EJN" 
+                  src="https://drive.google.com/thumbnail?id=1HSJUEnDSz_DVmckY1e722xEuGRI4gFc3&sz=w1200" 
+                  alt="Paulo Ricardo - Fundador EJN" 
                   className="w-full h-full object-cover object-center hover:scale-105 transition-transform duration-500"
                 />
               </div>
