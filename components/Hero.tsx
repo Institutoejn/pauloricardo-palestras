@@ -43,7 +43,7 @@ const Hero: React.FC = () => {
           <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6 mt-12 md:mt-16">
             <a 
               href="https://wa.me/5517991887227?text=Olá%20Paulo,%20vi%20sua%20Landing%20Page%20e%20gostaria%20de%20uma%20proposta." 
-              className="w-full sm:w-auto bg-[#00d1ff] text-[#050a18] px-10 py-5 rounded-full font-bold flex items-center justify-center space-x-2 btn-glow transition-all active:scale-95 text-lg"
+              className="w-full sm:w-auto bg-gradient-to-r from-[#00d1ff] to-[#0072ff] text-white px-10 py-5 rounded-full font-bold flex items-center justify-center space-x-2 btn-glow transition-all active:scale-95 text-lg"
             >
               <span>Agendar Palestra Agora</span>
               <ArrowRight size={20} />
