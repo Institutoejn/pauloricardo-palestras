@@ -10,6 +10,8 @@ const IconMap: Record<string, React.ReactNode> = {
 };
 
 const Lectures: React.FC = () => {
+  const whatsappUrl = "https://wa.me/5517991887227?text=Olá%20Paulo,%20vi%20sua%20Landing%20Page%20e%20gostaria%20de%20uma%20proposta.";
+
   return (
     <section id="palestras" className="py-20 md:py-24 px-4 sm:px-6 bg-[#0a1229]/30 scroll-mt-24">
       <div className="container mx-auto">
@@ -26,9 +28,9 @@ const Lectures: React.FC = () => {
             >
               <div className="relative w-full h-48 mb-6 rounded-2xl overflow-hidden border border-blue-900/30">
                 <img 
-                  src="https://placehold.co/600x400/050a18/00d1ff?text=Foto+da+Palestra" 
+                  src={`https://placehold.co/600x400/050a18/00d1ff?text=${lecture.title.replace(/ /g, '+')}`} 
                   alt={lecture.title} 
-                  className="w-full h-full object-cover transition-all duration-500"
+                  className="w-full h-full object-cover transition-all duration-500 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#050a18] to-transparent opacity-60"></div>
                 <div className="absolute bottom-4 left-4 w-10 h-10 bg-[#00d1ff] rounded-xl flex items-center justify-center text-[#050a18]">
@@ -62,7 +64,9 @@ const Lectures: React.FC = () => {
               </div>
 
               <a 
-                href="https://wa.me/5517991887227?text=Olá%20Paulo,%20vi%20sua%20Landing%20Page%20e%20gostaria%20de%20uma%20proposta." 
+                href={whatsappUrl}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-full bg-[#050a18]/40 sm:bg-transparent border border-blue-900/30 sm:border-0 p-4 sm:p-0 rounded-xl sm:rounded-none flex items-center justify-center sm:justify-start space-x-2 text-white font-bold group-hover:text-[#00d1ff] transition-colors active:scale-95"
               >
                 <span>Solicitar Proposta</span>
