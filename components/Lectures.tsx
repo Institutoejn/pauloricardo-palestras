@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Users, Zap, TrendingUp, ChevronRight, CheckCircle2, AlertCircle } from 'lucide-react';
+import { Users, Zap, TrendingUp, ChevronRight, CheckCircle2, AlertCircle, Target } from 'lucide-react';
 import { LECTURES } from '../constants';
 
 const IconMap: Record<string, React.ReactNode> = {
@@ -41,11 +41,16 @@ const Lectures: React.FC = () => {
               <h4 className="text-xl sm:text-2xl font-bold text-white mb-3 leading-snug group-hover:text-[#00d1ff] transition-colors">
                 {lecture.title}
               </h4>
-              <p className="text-gray-400 mb-6 text-sm flex-grow">
-                {lecture.description}
-              </p>
               
-              <div className="space-y-3 mb-8">
+              <div className="space-y-4 mb-8">
+                {/* Para Quem */}
+                <div className="flex items-start space-x-3">
+                  <Target size={18} className="text-[#00d1ff] shrink-0 mt-0.5" />
+                  <p className="text-gray-300 text-sm leading-relaxed">
+                    <span className="text-[#00d1ff] font-bold">Para quem:</span> {lecture.forWho}
+                  </p>
+                </div>
+
                 <div className="bg-[#050a18]/50 p-4 rounded-xl border border-blue-900/20">
                   <div className="flex items-center space-x-2 text-[#00d1ff] text-[10px] font-bold uppercase mb-2">
                     <AlertCircle size={14} />
@@ -67,9 +72,9 @@ const Lectures: React.FC = () => {
                 href={whatsappUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full bg-[#050a18]/40 sm:bg-transparent border border-blue-900/30 sm:border-0 p-4 sm:p-0 rounded-xl sm:rounded-none flex items-center justify-center sm:justify-start space-x-2 text-white font-bold group-hover:text-[#00d1ff] transition-colors active:scale-95"
+                className="mt-auto w-full bg-[#050a18]/40 sm:bg-transparent border border-blue-900/30 sm:border-0 p-4 sm:p-0 rounded-xl sm:rounded-none flex items-center justify-center sm:justify-start space-x-2 text-white font-bold group-hover:text-[#00d1ff] transition-colors active:scale-95"
               >
-                <span>Solicitar Proposta</span>
+                <span>Quero uma proposta</span>
                 <ChevronRight size={18} />
               </a>
             </div>
